@@ -1,0 +1,67 @@
+{
+  "results": {
+    "logreg": {
+      "roc_auc": 0.968365530809644,
+      "pr_auc": 0.34109752417054917,
+      "report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00    110715\n           1       0.44      0.62      0.52       429\n\n    accuracy                           1.00    111144\n   macro avg       0.72      0.81      0.76    111144\nweighted avg       1.00      1.00      1.00    111144\n",
+      "confusion_matrix": [
+        [
+          110373,
+          342
+        ],
+        [
+          161,
+          268
+        ]
+      ]
+    },
+    "rf": {
+      "roc_auc": 0.9972549797370283,
+      "pr_auc": 0.8643819125034089,
+      "report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00    110715\n           1       1.00      0.10      0.19       429\n\n    accuracy                           1.00    111144\n   macro avg       1.00      0.55      0.59    111144\nweighted avg       1.00      1.00      1.00    111144\n",
+      "confusion_matrix": [
+        [
+          110715,
+          0
+        ],
+        [
+          384,
+          45
+        ]
+      ]
+    },
+    "logreg_smote": {
+      "roc_auc": 0.965487754052989,
+      "pr_auc": 0.35089523080837304,
+      "report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00    110715\n           1       0.51      0.52      0.51       429\n\n    accuracy                           1.00    111144\n   macro avg       0.75      0.76      0.76    111144\nweighted avg       1.00      1.00      1.00    111144\n",
+      "confusion_matrix": [
+        [
+          110498,
+          217
+        ],
+        [
+          206,
+          223
+        ]
+      ]
+    },
+    "rf_smote": {
+      "roc_auc": 0.9976881989888358,
+      "pr_auc": 0.7948490345807092,
+      "report": "              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00    110715\n           1       1.00      0.11      0.19       429\n\n    accuracy                           1.00    111144\n   macro avg       1.00      0.55      0.60    111144\nweighted avg       1.00      1.00      1.00    111144\n",
+      "confusion_matrix": [
+        [
+          110715,
+          0
+        ],
+        [
+          383,
+          46
+        ]
+      ]
+    }
+  },
+  "best_model": "rf",
+  "best_pr_auc": 0.8643819125034089,
+  "target": "is_fraud"
+}
